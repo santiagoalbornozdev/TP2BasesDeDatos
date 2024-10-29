@@ -1,0 +1,65 @@
+EJERCICIO 1:
+
+1-Encuentra el titulo de cada película 
+
+SELECT title FROM movies;
+
+2-Encuentra el director de cada película
+
+SELECT director FROM movies;
+
+3-Encuentra el titulo y director de cada película
+
+SELECT title, director FROM movies;
+
+4-Encuentra el titul y el año de cada película
+
+SELECT title, year FROM movies;
+
+5-Encuentra toda la información sobre cada película
+
+SELECT * FROM movies;
+
+EJERCICIO 2:
+
+1-Encuentra la película con una fila id de 6
+
+SELECT * FROM movies
+WHERE id=6;
+
+2-Encuentra las películas estrenadas en los años 2000 y 2010
+
+SELECT * FROM movies
+WHERE year BETWEEN 2000 AND 2010; 
+
+3-Encuentra las películas no estrenadas en los años 2000 y 2010
+
+SELECT * FROM movies
+WHERE year NOT BETWEEN 2000 AND 2010;
+
+4-Encuentra las primeras 5 películas de Pixar y su año de estreno
+
+SELECT * FROM movies
+WHERE year < 2004;
+
+EJERCICIO 3:
+
+1-Encuentra todas las películas de Toy Story
+
+SELECT * FROM movies
+WHERE title LIKE "Toy Story%";
+
+2-Encuentra todas las películas dirigidas por John Lasseter
+
+SELECT * FROM movies
+WHERE director LIKE "John Lasseter";
+
+3-Encuentra todas las películas (y directores) no dirigidas por John Lasseter
+
+SELECT * FROM movies
+WHERE director NOT LIKE "John Lasseter";
+
+4-Encuentra todas las películas de WALL-*
+
+SELECT * FROM movies
+WHERE title LIKE "WALL-%";
